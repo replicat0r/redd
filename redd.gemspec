@@ -7,10 +7,10 @@ require 'redd/version'
 Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.name     = 'redd'
   spec.version  = Redd::VERSION
-  spec.authors  = ['Avinash Dwarapu']
-  spec.email    = ['avinash@dwarapu.me']
+  spec.authors  = ['Tyler Liu']
+  spec.email    = ['replicat0r.misc@gmai.com']
   spec.summary  = 'A batteries-included API wrapper for reddit.'
-  spec.homepage = 'https://github.com/avinashbot/redd'
+  spec.homepage = 'https://github.com/replicat0r/redd'
   spec.license  = 'MIT'
   spec.required_ruby_version = '>= 2.1.0'
 
@@ -21,11 +21,11 @@ Gem::Specification.new do |spec| # rubocop:disable Metrics/BlockLength
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'http', '~> 3.3.0'
+  spec.add_dependency 'http', '~> 4.0'
   spec.add_dependency 'lazy_lazer', '~> 0.8.1'
 
   spec.add_development_dependency 'pry', '~> 0.10'
-  spec.add_development_dependency 'bundler', '~> 1.14'
+  spec.add_development_dependency 'bundler', '~> 2.0.2'
   spec.add_development_dependency 'rake', '~> 12.0'
   spec.add_development_dependency 'yard', '~> 0.9.9'
   spec.add_development_dependency 'rubocop', '~> 0.50'
